@@ -12,6 +12,9 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+        'hero-section': "linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('assets/images/bg-note.jpg')"
+      }
     },
   },
   plugins: [],
