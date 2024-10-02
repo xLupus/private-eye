@@ -1,21 +1,22 @@
+import services from "@/data/services.json";
+import { AccessTime, CorporateFare, Email, LocalPhone } from '@mui/icons-material';
+
 export const ContactSection = () => {
 
     return (
-        <section className="
-            flex items-center justify-center w-full bg-zinc-800 py-7
-        ">
+        <section id="Contact"  className="flex items-center justify-center w-full bg-zinc-800 py-7">
             <div className="flex flex-col justify-center items-center max-w-7xl gap-8 p-3 text-gray-100
             ">
                 <div className="
-                    grid grid-cols-1 gap-10 items-center
-                    md:grid-cols-2
+                    grid grid-cols-1 gap-10 
+                    md:grid-cols-2 md:items-center
                     lg:grid-cols-5
                 ">
                     <div className="
-                        flex flex-col gap-7 justify-between h-4/6
+                        flex flex-col gap-7 justify-between h-4/6 
                         lg:col-span-3
                     ">
-                        <div className="flex flex-col gap-2">
+                        <div className="flex flex-col gap-7">
                             <span className="font-bold text-3xl">
                                 Contato
                             </span>
@@ -27,34 +28,28 @@ export const ContactSection = () => {
 
                         <div className="flex flex-col gap-4">
                             <div className="flex gap-3">
-                                <span>ico</span>
+                                <LocalPhone />
                                 <span>+55 (11) 12345-6789</span>
                             </div>
 
                             <div className="flex gap-3">
-                                <span>ico</span>
+                                <Email />
                                 <span>contato@privateeye.com</span>
                             </div>
 
                             <div className="flex gap-3">
-                                <span>ico</span>
+                                <AccessTime />
                                 <span>Atendimento das 6:00 às 18:00, Segunda a Sexta</span>
                             </div>
 
                             <div className="flex gap-3">
-                                <span>ico</span>
+                                <CorporateFare />
                                 <span>Baker Street, 221b - 01234-222, São Paulo - SP</span>
                             </div>
                         </div>
-
-                        <div className="flex gap-3">
-                            <span>ico</span>
-                            <span>ico</span>
-                        </div>
                     </div>
 
-                    <div className="
-                        w-full max-w-xl mx-auto
+                    <div className="w-full max-w-xl mx-auto
                         lg:col-span-2
                     ">
                         {/* Form */}
@@ -75,6 +70,17 @@ export const ContactSection = () => {
                             <div className="flex flex-col gap-1">
                                 <label htmlFor="" className="text-sm">Telefone</label>
                                 <input type="text" className="h-10 rounded-lg px-2 border-b border-b-black" placeholder="(99) 99999-9999" />
+                            </div>
+
+                            <div className="flex flex-col gap-2">
+                                <label className="text-sm">Tipo de Investigação</label>
+
+                                <select name="" id="" className="h-10 rounded-lg px-2 border-b border-b-black bg-transparent">
+                                    {services.map(service => (
+                                        <option value={service.name} key={service.name}>{service.name}</option>
+                                    ))}
+                                    <option value="another">Outro</option>
+                                </select>
                             </div>
 
                             <div className="flex flex-col gap-1">
@@ -117,9 +123,9 @@ export const ContactSection = () => {
                 </div>
 
                 <div>
-                    <span>© 2024 Company, Inc</span>
+                    <span>© 2024 Private Eye Agency</span>
                 </div>
             </div>
-        </section>
+        </section >
     );
 };

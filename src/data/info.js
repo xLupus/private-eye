@@ -1,36 +1,4 @@
 export default {
-    about: [
-        { 
-           topic: "Quem eu sou",
-           content: [
-                " Com anos de experiência no campo da investigação, dedico-me a ajudar pessoas e empresas a obterem respostas e soluções para uma variedade de questões delicadas e complexas."
-            ]
-        },
-    
-        {
-            topic: "O que eu faço",
-            content: [
-                "Utilizando técnicas avançadas e um conjunto diversificado de habilidades, estou preparado para lidar com uma ampla gama de casos, desde questões familiares até problemas corporativos."
-            ]
-        },
-    
-        {
-            topic: "Minha Abordagem",
-            content: [
-                "Minha abordagem para cada caso é personalizada e centrada no cliente. Trabalho de perto com meus clientes para entender suas necessidades e objetivos específicos, garantindo que cada investigação seja conduzida com precisão e discrição. Meu compromisso com a ética e a integridade é fundamental em cada etapa do processo."
-            ]
-        },
-    
-        {
-    
-            topic: "locali",
-            content: [
-                "Embora esteja baseado em  São Paulo - Capital, estou disponível para atender clientes em uma ampla área geográfica. Meu compromisso é fornecer serviços de investigação acessíveis e eficazes, independentemente de onde meus clientes estejam localizados."
-            ]
-            
-        }
-    ],
-
     whyus: [
         {
             title: "Discrição Absoluta",

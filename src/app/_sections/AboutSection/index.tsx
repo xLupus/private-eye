@@ -12,11 +12,9 @@ export const AboutSection = () => {
                 md:grid-cols-5
                 lg:grid-cols-6
             ">
-                <div className="md:relative md:h-full 
-                    md:col-span-2
-                ">
+                <div className="md:relative md:h-full md:col-span-2">
                     <div className="flex justify-center md:sticky top-24 mx-auto">
-                        <Image src={Picture} alt="" width={340} className="rounded-lg" />
+                        <Image src={Picture} alt="Vinicius Souza" width={340} className="rounded-3xl" draggable={false} />
                     </div>
                 </div>
 
@@ -43,19 +41,16 @@ export const AboutSection = () => {
                     </div>
 
                     <div className="flex flex-col gap-8">
-
                         <span className="font-bold text-xl">
                             Ao contratar meus serviços, você pode contar com:
                         </span>
-
+ 
                         <div className="flex flex-col gap-5">
                             {about.whyus.map(reason => (
                                 <div className="flex flex-col gap-2" key={reason.title}>
-                                    <span className="font-semibold text-xl">{reason.title}</span>
+                                    <span className="font-medium text-xl">{reason.title}</span>
 
-                                    <span>
-                                        {reason.description}
-                                    </span>
+                                    <span>{reason.description}</span>
                                 </div>
                             ))}
                         </div>

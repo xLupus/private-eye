@@ -6,7 +6,7 @@ export const FAQSection = () => {
             <div className="flex flex-col gap-5">
                 <h1 className="font-bold text-2xl text-center">FAQ</h1>
 
-                <span className="font-bold text-base">
+                <span className="font-bold text-base text-center">
                     Se você tiver mais duvidas, por favor entre em contato conosco
                 </span>
             </div>

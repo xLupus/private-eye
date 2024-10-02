@@ -11,7 +11,11 @@ export default function IndexPage() {
         <main className="h-screen">
             <HeroSection />
 
-            <div className="flex flex-col items-center gap-24 relative -top-14 mb-12">
+            <div className="max-w-7xl px-2 mx-auto flex flex-col items-center gap-20 relative -top-14 mb-12
+                md:max-w-4xl
+                lg:max-w-6xl
+                xl:max-w-7xl
+            ">
                 <AudienceSection />
                 <ServiceSection />
                 <AboutSection />
